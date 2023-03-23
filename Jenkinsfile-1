@@ -1,5 +1,6 @@
 pipeline {
   agent {
+   sh 'whoami'
     docker { image 'node:16-alpine' }
   }
   stages {
